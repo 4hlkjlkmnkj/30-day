@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 يوم - رسائل غامضة</title>
+    <style>
+        /* تنسيق عام للصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .highlight {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        /* تنسيق أزرار التمرير */
+        .scroll-btn {
+            position: fixed;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px white;
+            transition: 0.3s;
+        }
+
+        .scroll-btn:hover {
+            background: black;
+            box-shadow: 0px 0px 20px red;
+        }
+
+        .up {
+            bottom: 80px;
+        }
+
+        .down {
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📖 30 يوم - رسائل غامضة 🔥</h1>
+    <p>بقلم: <span class="highlight">محمود رضا</span> وشخص آخر</p>
+
+    <p>
+        في بلدة السنبلاوين الصغيرة، حيث الأفق الهادئ لا يعكر صفوه سوى أصوات الأطفال وأحاديث الكبار في المقاهي، يعيش محمود،
+        طالب نظم المعلومات في معهد مصر العالي. في سن التاسعة عشرة، حياته تبدو بسيطة، روتينية، إلا أن تلك الأيام العادية على وشك أن تنقلب رأسًا على عقب.
+    </p>
+
+    <p class="highlight">لكن في يوم عادي، يتلقى محمود رسالة غامضة تحمل عنوانًا غريبًا: "30 يومًا - تغيير إلى الأبد".</p>
+
+    <p>
+        كل يوم من الأيام الـ30 القادمة سيكون مليئًا بالتحديات المظلمة، حيث سيكتشف محمود أسرارًا عن نفسه وعن أسرته لم يكن ليتخيلها.
+        في هذه الرحلة، سيواجه قوى خفية، والعديد من الأسئلة التي ستدفعه لاكتشاف طبيعة واقعه.
+    </p>
+
+    <p>
+        هل يستطيع <span class="highlight">النجاة</span> من المصير المجهول؟ أم أن هناك شيئًا أكبر ينتظره؟
+    </p>
+
+    <!-- أزرار التحكم -->
+    <button class="scroll-btn up" onclick="scrollToTop()">🔝</button>
+    <button class="scroll-btn down" onclick="scrollToBottom()">🔻</button>
+
+    <script>
+        // دالة للتمرير إلى أعلى الصفحة
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // دالة للتمرير إلى أسفل الصفحة
+        function scrollToBottom() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
